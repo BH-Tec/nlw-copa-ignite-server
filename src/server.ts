@@ -18,7 +18,7 @@ async function bootstrap() {
     })
 
     await fastify.register(jwt, {
-        secret: 'SECRET',
+        secret: 'NEXT_PUBLIC_SECRET',
     })
 
     await fastify.register(poolRoutes)
